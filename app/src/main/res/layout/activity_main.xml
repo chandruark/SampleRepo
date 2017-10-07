@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chandru.adstocash.MainActivity">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="72dp"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="email address"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="password"
+        android:layout_above="@+id/phone"
+        android:layout_alignStart="@+id/phone"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/email" />
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="18dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:text="Already a member? Login"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:onClick="logi()"
+        android:layout_marginStart="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+<RadioGroup android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/radiogrp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="28dp"
+    android:layout_above="@+id/submit"
+    android:layout_centerHorizontal="true">
+
+
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/female"
+        android:layout_alignBottom="@+id/female"
+        android:layout_marginEnd="13dp"
+        android:layout_toStartOf="@+id/submit"
+        android:text="Male"
+        android:textSize="15dp" />
+
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:layout_alignStart="@+id/submit"
+        android:text="Female"
+        android:textSize="15dp" />
+</RadioGroup>
+
+</RelativeLayout>
